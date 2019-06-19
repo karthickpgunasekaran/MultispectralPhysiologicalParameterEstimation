@@ -11,6 +11,9 @@ Downsample.py :
 
 CreateCsvData.py :
     It converts the raw video captured by the multispectral camera to csv format data.
+    
+TextToCSV.py :
+     This file converts .txt file formats to .csv format
 
 
 
