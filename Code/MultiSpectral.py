@@ -191,8 +191,8 @@ def  readVideoFile(video_path):
     wavelength_normalized = bandPassFilter(wavelength_normalized)
     return wavelength_frame_avg, wavelength_normalized,frames
 
-
-
+#reads the video csv file and returns the mean of every available wavelength for each frame present and also the normalizes the frequencies across frame
+#The frequencies are mapped in ascending order to the array index
 def readCSVFile(wavelength_frame_avg):
     frames = wavelength_frame_avg.shape[1]
     wavelength_normalized = np.zeros(shape=(25, frames))
