@@ -23,9 +23,11 @@ def debug_plot_waves_single(wave,name):
     plt.show()
     plt.close()
 
-def debug_plot_waves(wave,name):
+def debug_plot_waves(wave,name,x_axis,y_axis):
     for i in range(25):
         plt.plot(wave[i])
+    plt.xlabel(x_axis)
+    plt.ylabel(y_axis)
     plt.title(name)
     plt.show()
     plt.close()
