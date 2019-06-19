@@ -1,9 +1,9 @@
 # Multispectral Parameter Estimation
 ## **Folder Descriptions**
 - **Inputs_ippg**
-This folder contains both the multispectral data and the ground truth data necessary.
+This folder contains all the multispectral data and the ground truth data files.
 - **Outputs_ippg**
-This folder contains the ippg predictions for the input data given. 
+This folder contains the ippg prediction files for the input data given. 
 
 ## **File Descriptions**
 - **MultiSpectral.py**
