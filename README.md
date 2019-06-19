@@ -1,4 +1,4 @@
-# Multispectral Parameter Estimation
+# Multispectral Physiological Parameter Estimation
 ## **Folder Descriptions**
 - **Inputs_ippg**
 This folder contains all the multispectral data and the ground truth data files.
