@@ -29,21 +29,16 @@ This file implements downsampling of video file. Input to this is the video csv 
 
 -  Run the main file for heart rate prediction,
 ```
-python MultiSpectral.py 
+python MultiSpectral.py --slide_time 50 --frame_rate 60 --slide_inc 20
+[Usage:]
+--slide_time       :  Sliding window time in seconds
+--frame_rate       :  Frame rate captured by the camera 
+--slide_inc        :  Overlapping increment in time in seconds
+--NO_ICA           :  Set to 1 if ICA is enabled, 0 if ICA is disabled
+--no_of_components :  No of components in the ICA
+--ica_type         :  Type of ICA algorithm
+--pca_components   :  No of PCA components
+--ica_iter         :  No of ICA iterations to be performed
+--ica_tolerance    :  ICA tolerance level to be performed
 ```
 This file is the main file which contains all the functions for implementing ICA, PCA, FFT, Filtering and Data loading. The inputs to this file are from Inputs_ippg and outputs are written to Outputs_ippg folder.
-
-    
-- Helper tool to convert text file to CSV
-```
-python TextToCSV.py
-```
-This file converts .txt file formats to .csv format. Path for the input and output files needs to be specified in the code.
-
-
-
-
-
-
-
-
