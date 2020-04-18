@@ -11,19 +11,29 @@ This folder contains the ippg prediction files for the input data given.
 
 - Analyse the input data captured by multispectral camera,
 ```
-python InputAnalysis.py
+python InputAnalysis.py --folder "path-to-folder" --file_type 0
+[Usage:]
+--folder      :  Set folder path
+--file_type   :  0- Tiff videos,1- Tiff image sequence 
 ```
 This file has functions for plotting input data, fft data and ICA data which should be enabled from MultiSpectral.py. 
 
-- Video to csv data,
+- Video to Csv file format,
 ```
-python CreateCsvData.py
+python CreateCsvData.py  --folder "path-to-folder" --file_type 0
+[Usage:]
+--folder      :  Set folder path
+--file_type   :  0- Tiff videos,1- Tiff image sequence 
 ```
 It converts the raw video captured by the multispectral camera to csv format data.
 
 - Downsample the input data captured,
 ```
-python Downsample.py
+python Downsample.py --downsample 6 --downsampled_file "path-to-folder" --original_file  "path-to-folder"
+[Usage:]
+--downsample       :   No of times the data should be downsampled
+--downsampled_file :   Post downsampling file name
+--original_file    :   Input file to be downsampled
 ```
 This file implements downsampling of video file. Input to this is the video csv and Output is the same folder.The downscale factor can be set in code to set the downsampling rate.
 
